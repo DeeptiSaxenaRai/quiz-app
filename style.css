@@ -1,0 +1,130 @@
+/* Set the body of main page */
+body {
+  background-color: rgb(25, 82, 39);
+  width: 100%;
+}
+/* To remove default css properties*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* To set Start screen and Score container Screen*/
+.start-screen,
+.score-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Design the button */
+#start-button,
+#restart {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+/* To set the heading */
+h1 {
+  color: aliceblue;
+}
+
+/* To set the display (question and answer)page */
+#display-container {
+  background-color: white;
+  padding: 50px 30px;
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+}
+/* To set the header of display container */
+.header {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(25, 82, 39);
+}
+/* To Set the timer devision in header part */
+.timer-div {
+  background-color: rgb(218, 51, 51);
+  color: white;
+  width: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* set the questions */
+.question {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+/* set option */
+.option-div {
+  font-size: 12px;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0;
+  text-align: left;
+  background: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.option-div:disabled {
+  color: black;
+  cursor: not-allowed;
+}
+
+/* To Design the next button on display container */
+#next-btn {
+  font-size: 16px;
+  margin-top: 30px;
+  background-color: rgb(25, 82, 39);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  float: right;
+}
+
+/* Hide the score screen firstly */
+.hide {
+  display: none;
+}
+
+/* design correct ans */
+.correct {
+  background-color: rgb(26, 109, 43);
+  color: rgb(21, 170, 21);
+  border-color: rgb(74, 140, 71);
+}
+
+/* design incorrect ans */
+.incorrect {
+  background-color: rgb(237, 76, 76);
+  color: rgb(171, 9, 9);
+  border-color: rgb(96, 28, 28);
+}
+
+/* To design the user score */
+#user-score {
+  font-size: 20px;
+  color: white;
+}
